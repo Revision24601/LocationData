@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@android:color/holo_red_dark"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent" >
 
     <Button
         android:id="@+id/location_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="location"
-        android:layout_width="wrap_content" />
+        android:text="location" />
 
     <Button
         android:id="@+id/location_button_2"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="weather"
-        android:layout_below="@+id/location_button" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location_button"
+        android:text="weather" />
 
     <Button
         android:id="@+id/location_button_3"
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="humidity"
-        android:layout_below="@id/location_button_2" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_button_2"
+        android:text="humidity" />
 
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_red_light" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_button_3"
+        android:background="@android:color/holo_blue_dark" />
 
 </RelativeLayout>
